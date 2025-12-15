@@ -1,0 +1,83 @@
+{
+    "teams": {
+        "records": [
+            {
+                "id": 1,
+                "name": "Mexico",
+                "flag": "Test"
+            },
+            {
+                "id": 2,
+                "name": "South Africa",
+                "flag": "Test"
+            },
+            {
+                "id": 3,
+                "name": "Korea",
+                "flag": "Test"
+            },
+            {
+                "id": 4,
+                "name": "Irland",
+                "flag": "Test"
+            }
+        ]
+    },
+    "players": {
+        "records": [
+            {
+                "id": 1,
+                "name": "Rafael Marquez",
+                "photo": "jpg",
+                "team": {
+                    "id": 1,
+                    "name": "Mexico",
+                    "flag": "Test"
+                },
+                "number": 4
+            }
+        ]
+    },
+    "groups": {
+        "records": [
+            {
+                "id": 1,
+                "name": "A",
+                "teams": [
+                    [
+                        1,
+                        {
+                            "id": 1,
+                            "name": "Mexico",
+                            "flag": "Test"
+                        }
+                    ],
+                    [
+                        2,
+                        {
+                            "id": 2,
+                            "name": "South Africa",
+                            "flag": "Test"
+                        }
+                    ],
+                    [
+                        3,
+                        {
+                            "id": 3,
+                            "name": "Korea",
+                            "flag": "Test"
+                        }
+                    ],
+                    [
+                        4,
+                        {
+                            "id": 4,
+                            "name": "Irland",
+                            "flag": "Test"
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+}
