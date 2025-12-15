@@ -3,7 +3,7 @@
 from graph_app.domain.entities.group_entity import Group
 from graph_app.domain.exceptions import DuplicateRecordError
 from graph_app.domain.repositories.group_repository import GroupRepository
-from graph_app.domain.use_cases._common import CommonUseCase
+from graph_app.app.use_cases._common import CommonUseCase
 
 
 class CreateGroupUseCase(CommonUseCase[GroupRepository, Group]):

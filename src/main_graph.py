@@ -1,7 +1,7 @@
 from tokenize import group
-from graph_app.domain.use_cases.group_use_cases import ConsultGroupUseCase, CreateGroupUseCase
-from graph_app.domain.use_cases.player_use_cases import CreatePlayerUseCase
-from graph_app.domain.use_cases.team_use_cases import ConsultTeamUseCase, CreateTeamUseCase
+from graph_app.app.use_cases.group_use_cases import ConsultGroupUseCase, CreateGroupUseCase
+from graph_app.app.use_cases.player_use_cases import CreatePlayerUseCase
+from graph_app.app.use_cases.team_use_cases import ConsultTeamUseCase, CreateTeamUseCase
 from graph_app.infrastructure.repositories.cache.cache_group_repository import CacheGroupRepository
 from graph_app.infrastructure.repositories.cache.cache_player_repository import CachePlayerRepository
 from graph_app.infrastructure.repositories.cache.cache_team_repository import CacheTeamRepository

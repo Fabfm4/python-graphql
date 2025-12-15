@@ -4,7 +4,7 @@ from graph_app.domain.entities.player_entity import Player
 from graph_app.domain.entities.team_entity import Team
 from graph_app.domain.exceptions import DuplicateRecordError
 from graph_app.domain.repositories.player_repository import PlayerRepository
-from graph_app.domain.use_cases._common import CommonUseCase
+from graph_app.app.use_cases._common import CommonUseCase
 
 
 class CreatePlayerUseCase(CommonUseCase[PlayerRepository, Player]):
