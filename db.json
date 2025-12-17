@@ -23,6 +23,328 @@
             }
         ]
     },
+    "matchs": {
+        "records": [
+            {
+                "id": 1,
+                "match_number": 1,
+                "local_team": {
+                    "id": 1,
+                    "name": "Mexico",
+                    "flag": "Test"
+                },
+                "away_team": {
+                    "id": 2,
+                    "name": "South Africa",
+                    "flag": "Test"
+                },
+                "group": {
+                    "id": 1,
+                    "name": "A",
+                    "teams": [
+                        [
+                            1,
+                            {
+                                "id": 1,
+                                "name": "Mexico",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            2,
+                            {
+                                "id": 2,
+                                "name": "South Africa",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            3,
+                            {
+                                "id": 3,
+                                "name": "Korea",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            4,
+                            {
+                                "id": 4,
+                                "name": "Irland",
+                                "flag": "Test"
+                            }
+                        ]
+                    ]
+                },
+                "stadium": "Stadium"
+            },
+            {
+                "id": 2,
+                "match_number": 2,
+                "local_team": {
+                    "id": 3,
+                    "name": "Korea",
+                    "flag": "Test"
+                },
+                "away_team": {
+                    "id": 4,
+                    "name": "Irland",
+                    "flag": "Test"
+                },
+                "group": {
+                    "id": 1,
+                    "name": "A",
+                    "teams": [
+                        [
+                            1,
+                            {
+                                "id": 1,
+                                "name": "Mexico",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            2,
+                            {
+                                "id": 2,
+                                "name": "South Africa",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            3,
+                            {
+                                "id": 3,
+                                "name": "Korea",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            4,
+                            {
+                                "id": 4,
+                                "name": "Irland",
+                                "flag": "Test"
+                            }
+                        ]
+                    ]
+                },
+                "stadium": "Stadium"
+            },
+            {
+                "id": 3,
+                "match_number": 3,
+                "local_team": {
+                    "id": 1,
+                    "name": "Mexico",
+                    "flag": "Test"
+                },
+                "away_team": {
+                    "id": 3,
+                    "name": "Korea",
+                    "flag": "Test"
+                },
+                "group": {
+                    "id": 1,
+                    "name": "A",
+                    "teams": [
+                        [
+                            1,
+                            {
+                                "id": 1,
+                                "name": "Mexico",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            2,
+                            {
+                                "id": 2,
+                                "name": "South Africa",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            3,
+                            {
+                                "id": 3,
+                                "name": "Korea",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            4,
+                            {
+                                "id": 4,
+                                "name": "Irland",
+                                "flag": "Test"
+                            }
+                        ]
+                    ]
+                },
+                "stadium": "Stadium"
+            },
+            {
+                "id": 4,
+                "match_number": 4,
+                "local_team": {
+                    "id": 4,
+                    "name": "Irland",
+                    "flag": "Test"
+                },
+                "away_team": {
+                    "id": 2,
+                    "name": "South Africa",
+                    "flag": "Test"
+                },
+                "group": {
+                    "id": 1,
+                    "name": "A",
+                    "teams": [
+                        [
+                            1,
+                            {
+                                "id": 1,
+                                "name": "Mexico",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            2,
+                            {
+                                "id": 2,
+                                "name": "South Africa",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            3,
+                            {
+                                "id": 3,
+                                "name": "Korea",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            4,
+                            {
+                                "id": 4,
+                                "name": "Irland",
+                                "flag": "Test"
+                            }
+                        ]
+                    ]
+                },
+                "stadium": "Stadium"
+            },
+            {
+                "id": 5,
+                "match_number": 5,
+                "local_team": {
+                    "id": 4,
+                    "name": "Irland",
+                    "flag": "Test"
+                },
+                "away_team": {
+                    "id": 1,
+                    "name": "Mexico",
+                    "flag": "Test"
+                },
+                "group": {
+                    "id": 1,
+                    "name": "A",
+                    "teams": [
+                        [
+                            1,
+                            {
+                                "id": 1,
+                                "name": "Mexico",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            2,
+                            {
+                                "id": 2,
+                                "name": "South Africa",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            3,
+                            {
+                                "id": 3,
+                                "name": "Korea",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            4,
+                            {
+                                "id": 4,
+                                "name": "Irland",
+                                "flag": "Test"
+                            }
+                        ]
+                    ]
+                },
+                "stadium": "Stadium"
+            },
+            {
+                "id": 6,
+                "match_number": 6,
+                "local_team": {
+                    "id": 2,
+                    "name": "South Africa",
+                    "flag": "Test"
+                },
+                "away_team": {
+                    "id": 3,
+                    "name": "Korea",
+                    "flag": "Test"
+                },
+                "group": {
+                    "id": 1,
+                    "name": "A",
+                    "teams": [
+                        [
+                            1,
+                            {
+                                "id": 1,
+                                "name": "Mexico",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            2,
+                            {
+                                "id": 2,
+                                "name": "South Africa",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            3,
+                            {
+                                "id": 3,
+                                "name": "Korea",
+                                "flag": "Test"
+                            }
+                        ],
+                        [
+                            4,
+                            {
+                                "id": 4,
+                                "name": "Irland",
+                                "flag": "Test"
+                            }
+                        ]
+                    ]
+                },
+                "stadium": "Stadium"
+            }
+        ]
+    },
     "players": {
         "records": [
             {
