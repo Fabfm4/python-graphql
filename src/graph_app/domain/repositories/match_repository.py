@@ -18,5 +18,9 @@ class MatchRepository(ABC, CrudRepository[GameMatch]):
         raise NotImplementedError
 
     @abstractmethod
+    def get_all(self) -> list[GameMatch]:
+        raise NotImplementedError
+
+    @abstractmethod
     def save(self, model: GameMatch) -> GameMatch:
         raise NotImplementedError

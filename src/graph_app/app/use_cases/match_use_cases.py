@@ -8,7 +8,12 @@ from graph_app.domain.repositories.match_repository import MatchRepository
 from graph_app.app.use_cases._common import CommonUseCase
 
 
-class CreateMatchUseCase(CommonUseCase[MatchRepository, GameMatch]):
+class MatchUseCase(CommonUseCase[MatchRepository, GameMatch]):
+    def __init__(self, repo: MatchRepository):
+        super().__init__(repo)
+
+
+class CreateMatchUseCase(MatchUseCase):
 
     def execute(self, match_number: int, local_team: Team, away_team: Team, group: Group, stadium: str, **kwargs) -> GameMatch:
         match_search = self.repo.get_match_by_number(match_number=match_number)
@@ -19,7 +24,7 @@ class CreateMatchUseCase(CommonUseCase[MatchRepository, GameMatch]):
         return new_match
 
 
-class ConsultMatchUseCase(CommonUseCase[MatchRepository, GameMatch]):
+class ConsultByNumberMatchUseCase(MatchUseCase):
 
     def execute(self, match_number: int, *args, **kwargs) -> GameMatch:
         match_search = self.repo.get_match_by_number(number=match_number)
@@ -27,4 +32,9 @@ class ConsultMatchUseCase(CommonUseCase[MatchRepository, GameMatch]):
             return match_search
 
         return None
-        
+
+
+class ConsultAllMatchUseCase(MatchUseCase):
+
+    def execute(self, *args, **kwargs) -> list[GameMatch]:
+        return self.repo.get_all()

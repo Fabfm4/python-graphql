@@ -18,5 +18,9 @@ class PlayerRepository(ABC, CrudRepository[Player]):
         raise NotImplementedError
 
     @abstractmethod
+    def get_all(self) -> list[Player]:
+        raise NotImplementedError
+
+    @abstractmethod
     def save(self, model: Player) -> Player:
         raise NotImplementedError

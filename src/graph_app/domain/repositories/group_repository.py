@@ -18,5 +18,9 @@ class GroupRepository(ABC, CrudRepository[Group]):
         raise NotImplementedError
 
     @abstractmethod
+    def get_all(self) -> list[Group]:
+        raise NotImplementedError
+
+    @abstractmethod
     def save(self, model: Group) -> Group:
         raise NotImplementedError

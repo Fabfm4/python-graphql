@@ -18,5 +18,9 @@ class TeamRepository(ABC, CrudRepository[Team]):
         raise NotImplementedError
 
     @abstractmethod
+    def get_all(self) -> list[Team]:
+        raise NotImplementedError
+
+    @abstractmethod
     def save(self, model: Team) -> Team:
         raise NotImplementedError

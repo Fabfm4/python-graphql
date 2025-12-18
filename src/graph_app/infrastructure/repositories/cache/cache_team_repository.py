@@ -16,9 +16,13 @@ class CacheTeamRepository(TeamRepository):
 
         return None
 
+    def get_all(self) -> list[Team]:
+        return [Team(**record) for record in self.get_all_records()]
+
     def save(self, model: Team) -> Team:
         if not model.id:
             model.id = self.get_max_id() + 1
             self.add_record(model.model_dump())
+            return model
 
         self.update_db()

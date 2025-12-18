@@ -6,7 +6,12 @@ from graph_app.domain.repositories.team_repository import TeamRepository
 from graph_app.app.use_cases._common import CommonUseCase
 
 
-class CreateTeamUseCase(CommonUseCase[TeamRepository, Team]):
+class TeamUseCases(CommonUseCase[TeamRepository, Team]):
+    def __init__(self, repo: TeamRepository):
+        super().__init__(repo)
+
+
+class CreateTeamUseCase(TeamUseCases):
 
     def execute(self, name, flag, **kwargs) -> Team:
         team_search = self.repo.get_team_by_name(name=name)
@@ -17,7 +22,7 @@ class CreateTeamUseCase(CommonUseCase[TeamRepository, Team]):
         return new_team
 
 
-class ConsultTeamUseCase(CommonUseCase[TeamRepository, Team]):
+class ConsultByNameTeamUseCase(TeamUseCases):
 
     def execute(self, name: str, *args, **kwargs) -> Team:
         team_search = self.repo.get_team_by_name(name=name)
@@ -26,3 +31,7 @@ class ConsultTeamUseCase(CommonUseCase[TeamRepository, Team]):
 
         return None
         
+
+class ConsultAllTeamUseCase(TeamUseCases):
+    def execute(self, *args, **kwargs) -> list[Team]:
+        return self.repo.get_all()

@@ -15,10 +15,14 @@ class CacheGroupRepository(GroupRepository):
             return Group(**record)
 
         return None
+    
+    def get_all(self) -> list[Group]:
+        return [Group(**record) for record in self.get_all_records()]
 
     def save(self, model: Group) -> Group:
         if not model.id:
             model.id = self.get_max_id() + 1
             self.add_record(model.model_dump())
+            return model
 
         self.update_db()

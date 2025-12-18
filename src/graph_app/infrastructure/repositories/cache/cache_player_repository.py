@@ -16,9 +16,13 @@ class CachePlayerRepository(PlayerRepository):
 
         return None
 
+    def get_all(self) -> list[Player]:
+        return [Player(**record) for record in self.get_all_records()]
+
     def save(self, model: Player) -> Player:
         if not model.id:
             model.id = self.get_max_id() + 1
             self.add_record(model.model_dump())
+            return model
 
         self.update_db()

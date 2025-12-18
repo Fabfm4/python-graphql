@@ -1,10 +1,21 @@
-from typing import Optional
-from pydantic import BaseModel
-
+from graph_app.domain.entities._common import Catalog, TimeStamp
 from graph_app.domain.entities.team_entity import Team
+from dataclasses import dataclass, field
+from datetime import datetime
 
 
-class Group(BaseModel):
-    id: Optional[int] = None
+@dataclass
+class Group:
+    id: int | None = None
     name: str
-    teams: list[tuple[int, Team]]
+    created_at: datetime = field(default_factory=datetime.now)
+    updated_at: datetime | None = None
+
+
+@dataclass
+class GroupInitialPosition:
+    group: Group
+    team: Team
+    position: int
+    created_at: datetime = field(default_factory=datetime.now)
+    updated_at: datetime | None = None

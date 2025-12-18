@@ -22,3 +22,6 @@ class CacheMatchRepository(MatchRepository):
             self.add_record(model.model_dump())
 
         self.update_db()
+    
+    def get_all(self) -> list[GameMatch]:
+        return [GameMatch(**record) for record in self.get_all_records()]

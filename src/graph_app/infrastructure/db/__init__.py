@@ -59,6 +59,9 @@ class MathDBOpteration():
 
     def add_record(self, record):
         self.database[self.table]['records'].append(record)
+    
+    def get_all_records(self):
+        return self.database[self.table]['records']
 
 
 def connection_db(_class):
